@@ -10,6 +10,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <style>
       .scrolling-content {
         animation: scroll 20s linear infinite;
@@ -229,6 +230,7 @@
         <div class="flex flex-col gap-2 items-center justify-center">
           <div
             class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center gap-4 m-10"
+            id="products"
           >
             <div class="card bg-base-100 w-auto shadow-xl">
               <figure>
@@ -307,34 +309,15 @@
               </div>
             </div>
           </div>
-          <button class="btn bg-green-500 hover:bg-green-400">View More</button>
+          <button class="btn bg-green-500 hover:bg-green-400" onclick="handleClick()">View More</button>
         </div>
       </section>
       <section class="container bg-gray-100">
         <div class="w-full overflow-hidden shadow-lg rounded-lg p-5">
           <h2 class="text-center text-2xl font-semibold mb-4">Our Partners</h2>
           <div class="flex overflow-hidden whitespace-nowrap">
-            <div class="scrolling-content flex">
-              <img src="logo1.png" alt="Partner 1" class="w-24 h-24 mx-8" />
-              <img src="logo2.png" alt="Partner 2" class="w-24 h-24 mx-8" />
-              <img src="logo3.png" alt="Partner 3" class="w-24 h-24 mx-8" />
-              <img src="logo4.png" alt="Partner 4" class="w-24 h-24 mx-8" />
-              <img src="logo5.png" alt="Partner 5" class="w-24 h-24 mx-8" />
-              <img src="logo1.png" alt="Partner 1" class="w-24 h-24 mx-8" />
-              <img src="logo2.png" alt="Partner 2" class="w-24 h-24 mx-8" />
-              <img src="logo3.png" alt="Partner 3" class="w-24 h-24 mx-8" />
-              <img src="logo4.png" alt="Partner 4" class="w-24 h-24 mx-8" />
-              <img src="logo5.png" alt="Partner 5" class="w-24 h-24 mx-8" />
-              <img src="logo1.png" alt="Partner 1" class="w-24 h-24 mx-8" />
-              <img src="logo2.png" alt="Partner 2" class="w-24 h-24 mx-8" />
-              <img src="logo3.png" alt="Partner 3" class="w-24 h-24 mx-8" />
-              <img src="logo4.png" alt="Partner 4" class="w-24 h-24 mx-8" />
-              <img src="logo5.png" alt="Partner 5" class="w-24 h-24 mx-8" />
-              <img src="logo1.png" alt="Partner 1" class="w-24 h-24 mx-8" />
-              <img src="logo2.png" alt="Partner 2" class="w-24 h-24 mx-8" />
-              <img src="logo3.png" alt="Partner 3" class="w-24 h-24 mx-8" />
-              <img src="logo4.png" alt="Partner 4" class="w-24 h-24 mx-8" />
-              <img src="logo5.png" alt="Partner 5" class="w-24 h-24 mx-8" />
+            <div id="partner" class="scrolling-content flex">
+              
             </div>
           </div>
         </div>
